@@ -1,0 +1,13 @@
+.login {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__btn-close {
+    display: flex;
+  }
+}
+
+
