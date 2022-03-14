@@ -1,0 +1,124 @@
+{
+  "root": true,
+  "ignorePatterns": ["src/app/common-components/components/icon/icon-types.const.ts"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json", "e2e/tsconfig.e2e.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/recommended--extra",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/component-class-suffix": [
+          "off",
+          {
+            "suffixes": [true]
+          }
+        ],
+        "@angular-eslint/component-selector": [
+          "off",
+          {
+            "type": "element",
+            "prefix": "kebab-case",
+            "style": true
+          }
+        ],
+        "@angular-eslint/directive-class-suffix": [
+          "off",
+          {
+            "suffixes": [true]
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "off",
+          {
+            "type": "attribute",
+            "prefix": "camelCase",
+            "style": true
+          }
+        ],
+        "@angular-eslint/no-attribute-decorator": "error",
+        "@angular-eslint/no-forward-ref": "error",
+        "@angular-eslint/no-host-metadata-property": "off",
+        "@typescript-eslint/switch-exhaustiveness-check": "error",
+        "@typescript-eslint/dot-notation": "off",
+        "@typescript-eslint/explicit-member-accessibility": [
+          "off",
+          {
+            "accessibility": "explicit"
+          }
+        ],
+        "@typescript-eslint/member-delimiter-style": [
+          "off",
+          {
+            "multiline": {
+              "delimiter": "none",
+              "requireLast": true
+            },
+            "singleline": {
+              "delimiter": "semi",
+              "requireLast": false
+            }
+          }
+        ],
+        "@typescript-eslint/member-ordering": "off",
+        "@typescript-eslint/no-inferrable-types": "off",
+        "@typescript-eslint/quotes": [
+          "off",
+          "single",
+          {
+            "allowTemplateLiterals": true
+          }
+        ],
+        "@typescript-eslint/semi": ["off", true],
+        "@typescript-eslint/type-annotation-spacing": "off",
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": "interface",
+            "format": ["PascalCase"],
+            "custom": {
+              "regex": "^I[A-Z]|DtoData$|Dto$",
+              "match": false
+            }
+          },
+          {
+            "selector": "enum",
+            "format": ["UPPER_CASE"]
+          }
+        ],
+        "brace-style": ["off", "1tbs"],
+        "eqeqeq": ["off", "always"],
+        "id-blacklist": "off",
+        "id-match": "off",
+        "no-underscore-dangle": "off",
+        "prefer-arrow/prefer-arrow-functions": "off",
+        "one-var": "off",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/consistent-type-assertions": "off",
+        "@typescript-eslint/ban-types": "off",
+        "no-unused-vars": "off",
+        "default-case": "error",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          {
+            "varsIgnorePattern": "[iI]gnored",
+            "argsIgnorePattern": "[iI]gnored"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "@angular-eslint/template/no-negated-async": "off"
+      }
+    }
+  ]
+}
