@@ -10,10 +10,11 @@ Figma base template https://www.figma.com/file/HgxQId3VcXqMMjbiovuK7S/Old-Careo-
 2. storybook
 3. angular material
 4. transloco
+5. loader
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4201/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
