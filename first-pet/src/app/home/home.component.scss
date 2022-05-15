@@ -1,10 +1,24 @@
-.home-wrap{
+:host {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  min-height: 100vh;
+  align-items: center;
 }
 
-.page{
-  flex-grow: 1;
+.text__wrap {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 50px;
+  height: 500px;
+  border-radius: 35px;
+  overflow: scroll;
+}
+
+.image {
+  display: block;
+  height: 450px;
+}
+
+.text {
+  line-height: 30px;
+
 }
