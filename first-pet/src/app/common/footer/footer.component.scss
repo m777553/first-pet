@@ -1,0 +1,23 @@
+.footer-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.link{
+  color: #ffffff;
+  &--phone{
+    background: url("../../../../src/assets/images/call-icon.svg") no-repeat left center;
+    background-size: contain;
+    padding-left: 35px;
+    height: 25px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+  }
+}

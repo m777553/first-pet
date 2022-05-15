@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 
 }
 
@@ -46,8 +47,8 @@
   margin-right: 10px;
   box-shadow: 1px 1px black;
 
-  &:hover, &:focus{
-    box-shadow:  1px 1px rgba(0,0,0,0.3);
+  &:hover, &:focus {
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
   }
 
   &:active {
