@@ -1,8 +1,9 @@
 @import "./styles/fonts";
 @import "styles/normalize.min.css";
+@import "styles/variables";
 
 /* You can add global styles to this file, and also import other style files */
-
+* {box-sizing: border-box}
 html, body { height: 100%; box-sizing: border-box }
 body { margin: 0; font-family: "Gill Sans", sans-serif; }
 h1,h2 { margin: 0; font-family: "Didot", serif; }
