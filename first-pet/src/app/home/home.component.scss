@@ -1,3 +1,5 @@
+@import "variables";
+
 :host {
   display: flex;
   flex-direction: row;
@@ -5,12 +7,18 @@
   align-items: center;
 }
 
-.text__wrap {
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 50px;
-  height: 500px;
+.text__paddings {
+  background-color: $white-4-opacity;
+  padding: 50px 30px 50px 50px;
+  height: 450px;
   border-radius: 35px;
+}
+
+.text__wrap {
+  padding-right: 20px;
   overflow: scroll;
+
+  height: 350px;
 }
 
 .image {
@@ -20,5 +28,5 @@
 
 .text {
   line-height: 30px;
-
+  text-align: justify;
 }

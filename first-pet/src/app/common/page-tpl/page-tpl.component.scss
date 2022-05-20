@@ -1,4 +1,6 @@
+@import "variables";
+
 :host {
   padding: 25px;
-  background: radial-gradient(at 20% 50%, #82A4F0 0%, white 60%);
+  background: radial-gradient(at 20% 50%, $blue 0%, white 60%);
 }

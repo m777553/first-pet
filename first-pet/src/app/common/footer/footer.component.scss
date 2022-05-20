@@ -1,3 +1,5 @@
+@import "variables";
+
 .footer-wrap{
   display: flex;
   flex-direction: row;
@@ -5,12 +7,12 @@
   align-items: center;
   padding: 15px;
   width: 100%;
-  color: #ffffff;
-  background-color: #000000;
+  color: $white;
+  background-color: $black;
 }
 
 .link{
-  color: #ffffff;
+  color: $white;
   &--phone{
     background: url("../../../../src/assets/images/call-icon.svg") no-repeat left center;
     background-size: contain;
